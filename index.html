@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed & Hager ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- خطوط جوجل عربية وإنجليزية أنيقة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- حاوية القلوب المتطايرة في الخلفية -->
+    <div id="hearts-container"></div>
+
+    <!-- 1. شاشة الدخول بالباسورد -->
+    <section id="login-screen" class="active">
+        <div class="login-card">
+            <div class="lock-icon">🔒</div>
+            <h2>Ahmed & Hager</h2>
+            <p class="subtitle">أدخل كلمة السر الخاصة بنا لرؤية المفاجأة ❤️</p>
+            
+            <div class="input-group">
+                <input type="password" id="password-input" placeholder="Enter Password (DD/MM/YYYY)">
+                <button id="login-btn">دخول ✨</button>
+            </div>
+            <p id="error-msg" class="error-msg">كلمة السر غير صحيحة، حاولي مرة أخرى ❤️</p>
+        </div>
+    </section>
+
+    <!-- 2. الصفحة الرئيسية للموقع -->
+    <main id="main-content" class="hidden">
+        
+        <!-- الهيدر والترحيب -->
+        <header class="hero-section">
+            <h1 class="couple-names">Ahmed ❤️ Hager</h1>
+            <p class="tagline">أجمل حكاية في حياتي</p>
+            
+            <!-- زر الأغنية: خليك معايا -->
+            <a href="https://www.youtube.com/results?search_query=%D8%AE%D9%84%D9%8A%D9%83+%D9%85%D8%B9%D8%A7%D9%8A%D8%A7+%D8%B9%D9%85%D8%B1%D9%88+%D8%AF%D9%8A%D8%A7%D8%A8" target="_blank" class="music-btn">
+                🎵 شغل أغنيتنا: "خليك معايا"
+            </a>
+        </header>
+
+        <!-- عداد الأيام -->
+        <section class="counter-section card">
+            <h2>Together Since 15/02/2024</h2>
+            <div class="counter-grid">
+                <div class="time-box">
+                    <span id="days-count">0</span>
+                    <p>يوم</p>
+                </div>
+            </div>
+            <p class="counter-footer">وكل يوم بيعدي بحبك أكتر من اللي قبله ✨</p>
+        </section>
+
+        <!-- خط الذكريات Timeline -->
+        <section class="timeline-section">
+            <h2 class="section-title">رحلتنا مع بعض 📖</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>15 فبراير 2024</h3>
+                        <p>بداية أجمل قصة حب وأحلى يوم في حياتي ❤️</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>أول ضحكة من القلب</h3>
+                        <p>اليوم اللي عرفت فيه إنك الشخص المناسب لروحي 🌸</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>الحاضر والمستقبل</h3>
+                        <p>كل يوم معاكي هو بداية لذكرى جديدة مش بتتنسى ✨</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- معرض الصور والفيديو -->
+        <section class="gallery-section">
+            <h2 class="section-title">أجمل لحظاتنا 📸</h2>
+            <p class="section-desc">أحلى صور وفيديوهات جمعتنا سوا ✨</p>
+            
+            <div class="gallery-grid">
+                <div class="photo-card">
+                    <img src="photos/photo1.jpeg" alt="Memory 1">
+                    <div class="caption">الخروجة الوحيدة ال كانت في كافيه 😔</div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/photo2.jpeg" alt="Memory 2">
+                    <div class="caption">مبقيتش احب الميلك شيك مانجا غير بعد ما دوقته معاكي 💋</div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/photo3.jpeg" alt="Memory 3">
+                    <div class="caption">🙆‍♀️:-Look how beautiful the moon is<br>🙎‍♂️:- i see</div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/photo4.jpeg" alt="Memory 4">
+                    <div class="caption">بموت في خدودك 💋</div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/photo5.jpeg" alt="Memory 5">
+                    <div class="caption">اول ذكري اوعدك مش هتضيع مني ابدا 🫂</div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/photo6.jpeg" alt="Memory 6">
+                    <div class="caption">اوعي تضيعي البطة 🫵</div>
+                </div>
+
+                <!-- الفيديو -->
+                <div class="photo-card">
+                    <video controls autoplay muted loop width="100%" style="border-radius: 15px; max-height: 220px; object-fit: cover;">
+                        <source src="videos/video1.mp4" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                    <div class="caption">كل لما نتخانق وتحسي انك زعلانه مني تعالي شوفي الفيديو ده عشان تعرفي ان ملناش غير بعض 🫂</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- رسائل الحب المفتوحة -->
+        <section class="letters-section">
+            <h2 class="section-title">رسائل من القلب 💌</h2>
+            <p class="section-desc">اضغطي على أي بطاقة لفتح الرسالة:</p>
+            <div class="letters-grid">
+                <div class="letter-card" onclick="toggleLetter(this)">
+                    <div class="letter-header">📩 افتحي لما تكوني متضايقة</div>
+                    <div class="letter-body">
+                        افتكر دايماً إني هنا عشانك، وسندك في أي وقت. ابتسامتك هي أهم حاجة عندي، ومفيش حاجة تستاهل تزعلك أبداً ❤️
+                    </div>
+                </div>
+                <div class="letter-card" onclick="toggleLetter(this)">
+                    <div class="letter-header">💌 افتحي لما توحشيني</div>
+                    <div class="letter-body">
+                        حتى لو بينا مسافات، أنتي دايماً في بالي وفي قلبي. كل لحظة بنكون فيها مع بعض هي الأحلى بالنسبة لي 🌸
+                    </div>
+                </div>
+                <div class="letter-card" onclick="toggleLetter(this)">
+                    <div class="letter-header">✨ رسالة خاصة ليكي</div>
+                    <div class="letter-body">
+                        شكراً لإنك موجودة في حياتي، وشكراً على كل كلمة حلوة وكل لحظة جميلة جمعتنا. أنتي أجمل اختيار اخترته 💖
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- الخاتمة والرسالة النهائية -->
+        <footer class="final-section">
+            <div class="final-card">
+                <h2 class="final-message">"I’ll always choose you ❤️"</h2>
+                <p>مهما مرت الأيام والظروف، أنتي اختياري الأول والوحيد دائمًا.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
